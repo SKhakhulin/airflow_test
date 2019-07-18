@@ -1,0 +1,20 @@
+INSERT INTO db_test.events SELECT
+    toDateTime(ts),
+    toUInt32OrZero(userId),
+    sessionId,
+    toFixedString(page, 50),
+    toFixedString(auth, 10),
+    toFixedString(method, 7),
+    toUInt16(status),
+    level,
+    toUInt16(itemInSession),
+    location,
+    userAgent,
+    toFixedString(lastName, 50),
+    toFixedString(firstName, 50),
+    toDateTime(registration),
+    ifNull(gender, 'U'),
+    artist,
+    song,
+    ifNull(length, 0)
+FROM db_test.eventslog
