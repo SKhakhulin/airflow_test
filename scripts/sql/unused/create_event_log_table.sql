@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS db_test.sql_events_log (
+    ts UInt32,
+    userId String,
+    sessionId Nullable(UInt32),
+    page Nullable(String),
+    auth Nullable(String),
+    method Nullable(String),
+    status Nullable(UInt16),
+    level Nullable(String),
+    itemInSession Nullable(UInt16),
+    location Nullable(String),
+    userAgent Nullable(String),
+    lastName Nullable(String),
+    firstName Nullable(String),
+    registration UInt32,
+    gender Nullable(String),
+    artist Nullable(String),
+    song Nullable(String),
+    length Nullable(Float32)
+) ENGINE = Log()

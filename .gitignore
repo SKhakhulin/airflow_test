@@ -221,12 +221,12 @@ dmypy.json
 
 # End of https://www.gitignore.io/api/redis,python,pycharm+all
 
-scripts/tmp/
-scripts/data/
-
-services/airflow/tmp/
-services/airflow/data/
-
-services/redis/data
-
-services/postgres/data
+#scripts/tmp/
+#scripts/data/
+#
+#services/airflow/tmp/
+#services/airflow/data/
+#
+#services/redis/data/
+#
+#services/postgres/data/
